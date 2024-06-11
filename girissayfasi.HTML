@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giriş Formu</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+        <div class="form signup">
+            <header>KULLANICI GİRİŞİ</header>
+            <form action="kullanıcıgirisi.html">
+                <input type="text" placeholder="Adınız" required>
+                <input type="text" placeholder="Email" required>
+                <input type="password" placeholder="Şifre" required>
+                <div class="checkbox">
+                    <input type="checkbox" id="signupcheckbox">
+                    <label for="signupcheckbox">Tüm şartlar ve koşulları kabul ediyorum</label>
+                </div>
+                <input type="submit" value="GİRİŞ YAP">
+                <a href="kullanıcıgirisi.HTML"></a>
+            </form>
+        </div>
+
+        <div class="form login">
+            <header>ADMİN GİRİŞİ</header>
+            <form action="admingirisi.html">
+                <input type="text" placeholder="Email" required>
+                <input type="password" placeholder="Şifre" required>
+                <a href="#">Şifrenizi mi unuttunuz!</a>
+                <input type="submit" value="Giriş Yap">
+                <a href="admingirisi.html"></a>
+                <p>Ya Da </p>
+                <a href="index.html">Anasayfaya Gidiniz</a>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        const wrapper = document.querySelector(".wrapper"),
+        signupHeader = document.querySelector(".signup header"),
+        loginHeader = document.querySelector(".login header");
+
+        loginHeader.addEventListener("click", () =>{
+            wrapper.classList.add("active");
+        });
+
+        signupHeader.addEventListener("click", () =>{
+            wrapper.classList.remove("active");
+        });
+    </script>
+
+  </body>
+</html>

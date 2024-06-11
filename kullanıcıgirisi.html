@@ -1,0 +1,58 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcı Paneli</title>
+    <link rel="stylesheet" href="kullanıcıgirisi.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="#">Şifre Güncelle</a></li>
+                <li><a href="index.html">Çıkış Yap</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="admin-notifications">
+            <h2>Yönetici Duyuruları</h2>
+            <ul>
+                <li>Duyuru 1</li>
+                <li>Duyuru 2</li>
+                <li>Duyuru 3</li>
+            </ul>
+        </section>
+        <section class="data-view">
+            <h2>Veriler</h2>
+            <input type="search" id="search" placeholder="Ara...">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Adı</th>
+                        <th>Soyadı</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="data-table">
+                    <!-- Veriler burada listelenecek -->
+                </tbody>
+            </table>
+        </section>
+        <section class="message-send">
+            <h2>Yöneticiye Mesaj Gönder</h2>
+            <form>
+                <input type="text" id="subject" placeholder="Konu">
+                <textarea id="message" placeholder="Mesaj"></textarea>
+                <button type="submit">Gönder</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+

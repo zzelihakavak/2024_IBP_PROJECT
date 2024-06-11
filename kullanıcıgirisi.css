@@ -1,0 +1,133 @@
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(106,113,173);
+    color: #fff;
+}
+
+/* Header */
+header {
+    background-color: rgb(106,113,173);
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #337ab7;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section li {
+    margin-bottom: 10px;
+}
+
+section li a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+section li a:hover {
+    color: #23527c;
+}
+
+/* Data View */
+.data-view {
+    margin-top: 20px;
+}
+
+.data-view table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.data-view th, .data-view td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.data-view th {
+    background-color: #f0f0f0;
+}
+
+.data-view th:first-child {
+    width: 20%;
+}
+
+.data-view td:first-child {
+    width: 20%;
+}
+
+/* Message Send */
+.message-send {
+    margin-top: 20px;
+}
+
+.message-send form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.message-send input[type="text"], .message-send textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.message-send button[type="submit"] {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.message-send button[type="submit"]:hover {
+    background-color: #23527c;
+}
